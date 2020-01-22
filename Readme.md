@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anna Sha](https://up.htmlacademy.ru/htmlcss/27/user/1116663).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://up.htmlacademy.ru/htmlcss/27/user/241239).
 
 ---
 
