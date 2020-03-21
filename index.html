@@ -12,7 +12,15 @@
     <a href="">
       <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов «Девайс»">
     </a>
-    <!--тут должна быть форма поиска по сайту-->
+    
+    
+    <form сlass="search" method="GET"> 
+    <label for="main-search" class="visually-hidden">Поиск по сайту</label>
+    <input type="search" id="main-search" placeholder="Поиск по сайту">
+    <button type="submit" aria-label="Найти"></button>
+    </form>
+
+
     <ul>
       <li>
         <a href="">Войти</a>
@@ -29,11 +37,41 @@
       </ul>
     </nav>
   </header>
+
+  <div class="write-us-popup">
+    <form class="write-us" method="post">
+      <p>
+        <h3>Ваше имя:</h3>
+        <label for="user-name" class="visually-hidden">Имя Фамилия</label>
+        <input id="user-name" type="text"
+               name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <h3>Ваш e-mail:</h3>
+        <label for="user-email" class="visually-hidden">Электронная почта</label>
+        <input id="user-email" type="text"
+               name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <h3>Текст письма:</h3>
+        <label for="user-message" class="visually-hidden">Введите текст</label>
+        <input id="user-message" type="text"
+               name="message" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+
+    </form>
+  </div>
+
+  <div class="map=popup">
+    <img src="img/map_popup.png" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+  </div>
+
   <main>
     <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
     <section class="slider">
       <h2 class="vidually-hidden">Слайдер с товарами</h2>
-      <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка 8,5 метров">
+      <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка 8,5 метров на треноге">
       <b>Делай селфи, как Бен Стиллер!</b>
       <p>Самая длинная палка для селфи доступна в нашем магазине.
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -146,7 +184,7 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
         бывает.</p>
-      <p><a href=""><img src="img/map.jpg" width="560" height="222" alt="Карта"></a></p>
+      <p><a href=""><img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></a></p>
       <a href="">Напишите нам</a>
     </section>
   </main>

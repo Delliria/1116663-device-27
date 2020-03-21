@@ -12,7 +12,13 @@
     <a href="index.html">
       <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов «Девайс»">
     </a>
-    <!--тут должна быть форма поиска по сайту-->
+
+    <form сlass="search" method="GET">
+      <label for="main-search" class="visually-hidden">Поиск по сайту</label>
+      <input type="search" id="main-search" placeholder="Поиск по сайту">
+      <button type="submit" aria-label="Найти"></button>
+    </form>
+
     <ul>
       <li>
         <a href="" class="user">Валентин Петухов</a>
@@ -25,7 +31,17 @@
       <a href="">Сравнить</a>
       <a href="">Корзина</a>
       <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <ul>
+            <li><a href="">Виртуальная реальность</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+            <li><a href="">Экшн-камеры</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Умные часы</a></li>
+            <li><a href="">Квадрокоптеры</a></li>
+          </ul>
+        </li>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -41,19 +57,68 @@
     </ul>
     <section class="filters">
       <h2>Фильтры:</h2>
-      <!--Здесь будет форма-->
+
+      <form class="filter" method="get">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="filter-color-black" checked>
+              <label for="filter-color-black">Черный</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="white" id="filter-color-white">
+              <label for="filter-color-white">Белый</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="blue" id="filter-color-blue" checked>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="red" id="filter-color-red" checked>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="filter-color-pink">
+              <label for="filter-color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth" value="yes" id="filter-bluetooth-yes" checked>
+              <label for="filter-bluetooth-yes">
+                Есть
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" value="no" id="filter-bluetooth-no">
+              <label for="filter-bluetooth-no">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
 
     <div>
-    <h2>Сортировка:</h2>
-    <ul>
-      <li><a href="">По цене</a></li>
-      <li><a href="">По типу</a></li>
-      <li><a href="">По популярности</a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
+      <h2>Сортировка:</h2>
+      <ul>
+        <li><a href="">По цене</a></li>
+        <li><a href="">По типу</a></li>
+        <li><a href="">По популярности</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
     </div>
 
 
@@ -63,28 +128,28 @@
         <li class="catalog-item">
           <h3><a href="">Любительская селфи-палка</a></h3>
           <p class="catalog-item-image">
-            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <img src="img/item-1.jpg" width="360" height="380" alt="Простая селфи-палка с прикреплённым айфоном">
           </p>
           <span class="catalog-item-price">500 руб.</span>
         </li>
         <li class="catalog-item">
           <h3><a href="">Профессиональная селфи-палка</a></h3>
           <p class="catalog-item-image">
-            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <img src="img/item-2.jpg" width="360" height="380" alt="Понтовая селфи-палка которая выглядит ну очень профессионально">
           </p>
           <span class="catalog-item-price">1500 руб.</span>
         </li>
         <li class="catalog-item">
           <h3><a href="">Непотопляемая селфи-палка</a></h3>
           <p class="catalog-item-image">
-            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <img src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка с прикреплённой камерой для съёмок под водой">
           </p>
           <span class="catalog-item-price">2500 руб.</span>
         </li>
         <li class="catalog-item">
           <h3><a href="">Селфи-палка "Следуй за мной"</a></h3>
           <p class="catalog-item-image">
-            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
+            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка с искуственной человеческой рукой">
           </p>
           <span class="catalog-item-price">4900 руб.</span>
         </li>
